@@ -10,7 +10,7 @@ var grafana_proto = grpc.load(PROTO_PATH).grafana;
  */
 function query(call, callback) {
   //will echo request to clinet
-  callback(null, {call.request.endpoint});
+  callback(null, {result: call.endpoint});
 }
 
 /**
